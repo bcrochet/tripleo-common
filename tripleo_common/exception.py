@@ -46,3 +46,7 @@ class StateTransitionFailed(Exception):
             }
         )
         super(StateTransitionFailed, self).__init__(message)
+
+
+class PasswordFileNotFound(Exception):
+    """Password file for the Heat stack not found in the current working dir"""
